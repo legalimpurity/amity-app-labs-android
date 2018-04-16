@@ -13,15 +13,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private String[] mTitleDataset;
     private String[] mSubTitleDataset;
 
-    MyAdapter()
+    MyAdapter(String[] mTitleDataset, String[] mSubTitleDataset)
     {
-        mTitleDataset = new String[35];
-        mSubTitleDataset = new String[35];
-        for(int i =0; i< 35; i++)
-        {
-            mTitleDataset[i] = "Amity"+i;
-            mSubTitleDataset[i] = "Incubator"+i;
-        }
+        this.mTitleDataset = mTitleDataset;
+        this.mSubTitleDataset = mSubTitleDataset;
     }
 
     @NonNull
