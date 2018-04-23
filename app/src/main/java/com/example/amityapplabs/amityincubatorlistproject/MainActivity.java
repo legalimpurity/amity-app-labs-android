@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
         mTitleDataset = new String[35];
         mSubTitleDataset = new String[35];
 
-//        getAPIData();
+        getAPIData();
 
-        createFakeData();
+//        createFakeData();
         setMyRecyclerView();
     }
 
